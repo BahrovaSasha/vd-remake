@@ -1,0 +1,61 @@
+@import "vars"
+
+// Extra small devices
+$screen-xs-max: 350
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-max: 576
+
+// Small tablets (portrait view)
+$screen-md-max: 768
+
+// Tablets and small desktops
+$screen-lg-max: 992
+
+// Large tablets and desktops
+$screen-xl-max: 1200
+
+
+// @mixin respond-to($media)
+// 	@media only screen and (max-width: $media)
+// 		@content
+
+Custom devices
+@mixin rwd($screen)
+  @media (max-width: $screen + "px")
+    @content
+
+
+
+// Extra large devices
+@mixin xl
+  @media only screen and (max-width: $screen-xl-max + "px")
+    @content
+
+
+
+// Large devices
+@mixin lg
+  @media only screen and (max-width: $screen-lg-max + "px")
+    @content
+
+
+
+// Medium devices
+@mixin md
+	@media only screen and (max-width: $screen-md-max + "px")
+		@content
+
+
+
+// Small devices
+@mixin sm
+	@media only screen and (max-width: $screen-sm-max + "px")
+		@content
+
+
+
+// Extra-small devices
+@mixin xs
+  @media only screen and (max-width: $screen-xs-max + "px")
+    @content
