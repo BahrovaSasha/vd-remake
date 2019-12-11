@@ -4,6 +4,7 @@
     <list default="true" id="76918057-9267-4845-846b-e1a4d030380d" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/app/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/photo5420523915152830123.jpg" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,11 +29,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-153">
-              <caret line="57" column="24" selection-start-line="57" selection-start-column="12" selection-end-line="57" selection-end-column="24" />
+            <state relative-caret-position="171">
+              <caret line="522" column="82" selection-start-line="522" selection-start-column="82" selection-end-line="522" selection-end-column="82" />
               <folding>
                 <element signature="n#style#0;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#svg#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -43,16 +44,17 @@
                 <element signature="n#symbol#3;n#svg#2;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#symbol#4;n#svg#2;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#symbol#5;n#svg#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#svg#2;n#body#0;n#html#0;n#!!top" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="2084" column="39" lean-forward="true" selection-start-line="2084" selection-start-column="39" selection-end-line="2084" selection-end-column="39" />
+            <state relative-caret-position="307">
+              <caret line="2389" column="23" selection-start-line="2389" selection-start-column="23" selection-end-line="2389" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -61,11 +63,7 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>main-header</find>
-      <find>align-items-center</find>
-      <find>burger-menu</find>
       <find>main-header .lo</find>
-      <find>main-section-info</find>
       <find>send-button</find>
       <find>main-section-in</find>
       <find>contact-us-input</find>
@@ -91,6 +89,10 @@
       <find>contact-us-tex</find>
       <find>apply-section</find>
       <find>logo</find>
+      <find>heart-marker</find>
+      <find>advantage-section</find>
+      <find>main-section-info</find>
+      <find>feature-img</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -122,8 +124,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="454" />
-    <option name="y" value="308" />
+    <option name="x" value="194" />
+    <option name="y" value="167" />
     <option name="width" value="1368" />
     <option name="height" value="676" />
   </component>
@@ -216,15 +218,15 @@
       <workItem from="1575891917727" duration="5817000" />
       <workItem from="1575963493430" duration="19636000" />
       <workItem from="1576051634257" duration="5356000" />
-      <workItem from="1576059774387" duration="4328000" />
+      <workItem from="1576059774387" duration="9403000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58825000" />
+    <option name="totallyTimeSpent" value="63900000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="454" y="308" width="1368" height="676" extended-state="0" />
+    <frame x="194" y="167" width="1368" height="676" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -272,6 +274,7 @@
             <element signature="n#symbol#3;n#svg#2;n#body#0;n#html#0;n#!!top" />
             <element signature="n#symbol#4;n#svg#2;n#body#0;n#html#0;n#!!top" />
             <element signature="n#symbol#5;n#svg#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#svg#2;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>
@@ -392,17 +395,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="2084" column="39" lean-forward="true" selection-start-line="2084" selection-start-column="39" selection-end-line="2084" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-153">
-          <caret line="57" column="24" selection-start-line="57" selection-start-column="12" selection-end-line="57" selection-end-column="24" />
+        <state relative-caret-position="171">
+          <caret line="522" column="82" selection-start-line="522" selection-start-column="82" selection-end-line="522" selection-end-column="82" />
           <folding>
             <element signature="n#style#0;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#svg#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -413,7 +409,15 @@
             <element signature="n#symbol#3;n#svg#2;n#body#0;n#html#0;n#!!top" />
             <element signature="n#symbol#4;n#svg#2;n#body#0;n#html#0;n#!!top" />
             <element signature="n#symbol#5;n#svg#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#svg#2;n#body#0;n#html#0;n#!!top" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="2389" column="23" selection-start-line="2389" selection-start-column="23" selection-end-line="2389" selection-end-column="23" />
         </state>
       </provider>
     </entry>

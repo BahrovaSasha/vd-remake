@@ -2082,7 +2082,7 @@ body {
   overflow-y: hidden;
   width: 100%; }
 
-.logo-svg, .heart-marker, .features-icons, .arrows {
+.logo-svg, .heart, .features-icons, .arrows {
   display: none; }
 
 h1, h3, p {
@@ -2382,6 +2382,14 @@ section {
 .about-section-info {
     width: 50%;
     height: 100%; }
+.main-section-info {
+    position: relative;
+}
+.main-section-info:before {
+    content: '';
+    position: absolute;
+
+}
   .main-section .logo-wrap,
   .about-section .logo-wrap,
   .question-section .logo-wrap {
@@ -2543,11 +2551,14 @@ section {
     padding: 4rem 0;
 }
 .feature-img {
-    min-width: 72px;
+    width: 72px;
     height: 72px;
 }
 .feature-img svg {
     fill: #FF5B51;
+    /*width: 72px;*/
+    /*height: 72px;*/
+
 }
 .feature-text {
     color: #FF5B51;
@@ -2700,6 +2711,7 @@ section {
     text-align: center; }
 .advantage-section .feature-text {
     color: #fff;
+    padding: 2rem 2rem 2rem 0;
 }
 .advantages-wrap,
 .cases-wrap {
@@ -2709,6 +2721,8 @@ section {
 .advantage-point {
     padding: 1rem 20rem 1rem 0; }
 .advantage-point svg {
+    height: 28px;
+    width: 28px;
     fill: #fff; }
 
 /*.features-text {*/
@@ -2727,6 +2741,8 @@ section {
 .case-point {
     padding: 1rem 0 1rem 20rem; }
 .case-point svg {
+    height: 28px;
+    width: 28px;
     fill: #FF5B51; }
 
 .question-section {
