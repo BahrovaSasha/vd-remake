@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="cacb82d4-60cb-4d80-9318-8f8564f92681" name="URB" url="http://ukrainianrealbrides.com">
+        <fileTransfer host="ukrainianrealbrides.com" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="0436e9e1-687e-45f7-bcdd-6784189d76ec" name="s-line" url="http://sline.co.ua">
+        <fileTransfer host="sline.co.ua" port="21" rootFolder="/www/">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
