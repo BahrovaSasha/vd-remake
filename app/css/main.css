@@ -2102,6 +2102,10 @@ button {
   button:focus {
     outline: none; }
 
+main {
+    overflow: hidden;
+}
+
 .preloader {
   background-color: #fff;
   z-index: 1000;
@@ -2160,10 +2164,6 @@ button {
           box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
   height: 6rem;
   z-index: 100; }
-  @media only screen and (max-width: 576px) {
-    .main-header {
-      padding: 0 1rem;
-      height: 7rem; } }
   .main-header .header-wrap {
     max-width: 1600px;
     margin: 0 auto;
@@ -2178,6 +2178,7 @@ button {
     @media only screen and (max-width: 576px) {
       .main-header .logo-wrap {
         width: 10rem;
+        height: 5rem;
          } }
     .main-header .logo-wrap svg {
       width: 100%;
@@ -2372,8 +2373,23 @@ section {
   color: #fff;
   height: 100vh;
   width: 100vw;
+  position: relative;
   text-align: center;
   overflow: hidden; }
+.main-section:before {
+    content: '';
+    background: -webkit-gradient(linear, right top, left top, color-stop(3%, #ff5b51), color-stop(97%, rgba(255, 91, 81, 0))), url("../img/couple2.jpg") no-repeat;
+    background: -o-linear-gradient(right, #ff5b51 3%, rgba(255, 91, 81, 0) 97%), url("../img/couple2.jpg") no-repeat;
+    background: linear-gradient(to left, rgba(255, 91, 81, 1) 3%, rgba(255, 91, 81, 0) 97%), url('../img/couple2.jpg') no-repeat;
+    background-size: 100% auto;
+    background-position: 30% 20%;
+    width: 60%;
+    height: inherit;
+    position: absolute;
+    left: -10%;
+    top: 0;
+
+}
   @media only screen and (max-width: 576px) {
     .main-section {
       min-height: 45rem;
@@ -2384,10 +2400,23 @@ section {
     height: 100%; }
 .main-section-info {
     position: relative;
+    /*background-color: #FF5B51;*/
+
 }
 .main-section-info:before {
+    /*content: url('img/big-heart-shape.svg');*/
     content: '';
+    background: url('../img/big-heart-shape.svg') no-repeat;
+    background-size: auto 100%;
+    height: 110%;
+    width: 100%;
     position: absolute;
+    left: -50%;
+    top: -6%;
+    bottom: 0;
+    display: block;
+
+
 
 }
   .main-section .logo-wrap,
@@ -2395,6 +2424,7 @@ section {
   .question-section .logo-wrap {
     width: 30rem;
     height: 16rem;
+    z-index: 1;
     /*min-height: 10rem;*/
     margin-bottom: 2rem; }
     .main-section .logo-wrap svg,
@@ -2409,6 +2439,11 @@ section {
       .question-section .logo-wrap {
         width: 24rem;
         height: 16rem; } }
+.main-section-info .big-header,
+.main-section-info .form-general {
+    z-index: 1;
+}
+
 .big-header {
     font-size: 3.8rem;
     font-family: "oswald-regular";
@@ -2536,8 +2571,39 @@ section {
     background-color: #FF5B51;
     color: #fff;
     text-align: center;
-    height: auto;
+    height: 100vh;
     min-height: 600px;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+.about-section:before {
+    content: '';
+    background: -webkit-gradient(linear, left top, right top, color-stop(3%, #ff5b51), color-stop(97%, rgba(255, 91, 81, 0))), url("../img/valentina-photo.jpg") no-repeat;
+    background: -o-linear-gradient(left, #ff5b51 3%, rgba(255, 91, 81, 0) 97%), url("../img/valentina-photo.jpg") no-repeat;
+    background: linear-gradient(to right, rgba(255, 91, 81, 1) 3%, rgba(255, 91, 81, 0) 97%), url('../img/valentina-photo.jpg') no-repeat;
+    background-size: 100% auto;
+    background-position: 30% 20%;
+    width: 60%;
+    height: inherit;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.about-section-info {
+    position: relative;
+}
+.about-section-info:before {
+    content: '';
+    background: url('../img/big-heart-shape.svg') no-repeat;
+    background-size: auto 100%;
+    height: 104%;
+    width: 100%;
+    position: absolute;
+    right: -50%;
+    top: 0;
+    bottom: 0;
+    display: block;
 }
 .section-info-text {
     padding: 4rem 1rem;
@@ -2577,8 +2643,8 @@ section {
 
 .gender-section {
     width: 100%;
-    overflow-x: hidden;
-    overflow-y: visible;
+    height: 100vh;
+    overflow: hidden;
 }
 .gender-section .big-header {
     padding: 4rem 2rem;
@@ -2594,7 +2660,7 @@ section {
     left: -28%;
     height: 88%;
     width: 50%;
-    bottom: -2%;
+    bottom: 0;
 }
 @media only screen and (max-width: 992px) {
     .left-figure {
@@ -2706,8 +2772,24 @@ section {
 .advantage-section {
     padding: 4rem 0;
     background-color: #FF5B51;
+    position: relative;
     color: #fff; }
-.advantage-section .big-header {
+.advantage-section:before {
+    content: '';
+    background: -webkit-gradient(linear, left top, right top, color-stop(3%, #ff5b51), color-stop(97%, rgba(255, 91, 81, 0))), url("../img/couple-hands.jpg") no-repeat;
+    background: -o-linear-gradient(left, #ff5b51 3%, rgba(255, 91, 81, 0) 97%), url("../img/couple-hands.jpg") no-repeat;
+    background: linear-gradient(to right, rgba(255, 91, 81, 1) 3%, rgba(255, 91, 81, 0) 97%), url('../img/couple-hands.jpg') no-repeat;
+    background-size: auto 100%;
+    background-position: 30% 20%;
+    width: 45%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.advantage-section .big-header,
+.case-section .big-header {
+    z-index: 1;
     text-align: center; }
 .advantage-section .feature-text {
     color: #fff;
@@ -2736,7 +2818,21 @@ section {
 .case-section {
     background-color: #fff;
     color: #FF5B51;
+    position: relative;
     padding: 4rem 0; }
+.case-section:before {
+    content: '';
+    background: -webkit-gradient(linear, right top, left top, color-stop(3%, white), color-stop(97%, rgba(255, 255, 255, 0))), url("../img/couple-rain.jpg") no-repeat;
+    background: -o-linear-gradient(right, white 3%, rgba(255, 255, 255, 0) 97%), url("../img/couple-rain.jpg") no-repeat;
+    background: linear-gradient(to left, rgba(255, 255, 255, 1) 3%, rgba(255, 255, 255, 0) 97%), url('../img/couple-rain.jpg') no-repeat;
+    background-size: auto 100%;
+    background-position: 30% 20%;
+    width: 45%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
 
 .case-point {
     padding: 1rem 0 1rem 20rem; }
