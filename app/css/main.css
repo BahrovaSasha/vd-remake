@@ -2378,9 +2378,11 @@ section {
   overflow: hidden; }
 .main-section:before {
     content: '';
-    background: -webkit-gradient(linear, right top, left top, color-stop(3%, #ff5b51), color-stop(97%, rgba(255, 91, 81, 0))), url("../img/couple2.jpg") no-repeat;
-    background: -o-linear-gradient(right, #ff5b51 3%, rgba(255, 91, 81, 0) 97%), url("../img/couple2.jpg") no-repeat;
-    background: linear-gradient(to left, rgba(255, 91, 81, 1) 3%, rgba(255, 91, 81, 0) 97%), url('../img/couple2.jpg') no-repeat;
+    /*background: -webkit-gradient(linear, right top, left top, color-stop(3%, #ff5b51), color-stop(97%, rgba(255, 91, 81, 0))), url("../img/couple2.jpg") no-repeat;*/
+    /*background: -o-linear-gradient(right, #ff5b51 3%, rgba(255, 91, 81, 0) 97%), url("../img/couple2.jpg") no-repeat;*/
+    background: linear-gradient(to left, rgba(255, 91, 81, 1), rgba(255, 91, 81, 0), rgba(255, 255, 255, 1)), url('../img/couple2.jpg') no-repeat;
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
     background-size: 100% auto;
     background-position: 30% 20%;
     width: 60%;
@@ -2388,7 +2390,11 @@ section {
     position: absolute;
     left: -10%;
     top: 0;
-
+}
+@media only screen and (max-width: 992px) {
+    .main-section:before {
+        background-size: auto 100%;
+    }
 }
   @media only screen and (max-width: 576px) {
     .main-section {
@@ -2408,14 +2414,14 @@ section {
     content: '';
     background: url('../img/big-heart-shape.svg') no-repeat;
     background-size: auto 100%;
-    height: 110%;
+    height: 100%;
     width: 100%;
     position: absolute;
     left: -50%;
-    top: -6%;
+    top: 0;
     bottom: 0;
     display: block;
-
+    background-attachment: local;
 
 
 }
@@ -2440,7 +2446,9 @@ section {
         width: 24rem;
         height: 16rem; } }
 .main-section-info .big-header,
-.main-section-info .form-general {
+.main-section-info .form-general,
+.about-section-info .big-header,
+.about-section-info .section-info-text {
     z-index: 1;
 }
 
@@ -2448,6 +2456,11 @@ section {
     font-size: 3.8rem;
     font-family: "oswald-regular";
     line-height: 1.2;
+}
+@media only screen and (max-width: 992px) {
+    .big-header {
+        font-size: 2.8rem;
+    }
 }
 .form-general {
     max-width: 30rem;
@@ -2579,49 +2592,72 @@ section {
 }
 .about-section:before {
     content: '';
-    background: -webkit-gradient(linear, left top, right top, color-stop(3%, #ff5b51), color-stop(97%, rgba(255, 91, 81, 0))), url("../img/valentina-photo.jpg") no-repeat;
-    background: -o-linear-gradient(left, #ff5b51 3%, rgba(255, 91, 81, 0) 97%), url("../img/valentina-photo.jpg") no-repeat;
-    background: linear-gradient(to right, rgba(255, 91, 81, 1) 3%, rgba(255, 91, 81, 0) 97%), url('../img/valentina-photo.jpg') no-repeat;
+    /*background: -webkit-gradient(linear, left top, right top, color-stop(3%, #ff5b51), color-stop(97%, rgba(255, 91, 81, 0))), url("../img/valentina-photo.jpg") no-repeat;*/
+    /*background: -o-linear-gradient(left, #ff5b51 3%, rgba(255, 91, 81, 0) 97%), url("../img/valentina-photo.jpg") no-repeat;*/
+    /*background: linear-gradient(to right, rgba(255, 91, 81, 1) 3%, rgba(255, 91, 81, 0) 97%), url('../img/valentina-photo.jpg') no-repeat;*/
+    background: linear-gradient(to right, rgba(255, 91, 81, 1), rgba(255, 91, 81, 0), rgba(255, 255, 255, 1)), url('../img/valentina-photo.jpg') no-repeat;
     background-size: 100% auto;
-    background-position: 30% 20%;
-    width: 60%;
-    height: inherit;
+    background-position: 50% 50%;
+    width: 70%;
+    height: 100%;
     position: absolute;
-    right: 0;
+    right: -10%;
     top: 0;
 }
+@media only screen and (max-width: 768px) {
+    .about-section:before {
+        background-size: auto 100%;
+    }
+    }
 .about-section-info {
     position: relative;
+    padding: 4rem 0;
 }
 .about-section-info:before {
     content: '';
     background: url('../img/big-heart-shape.svg') no-repeat;
     background-size: auto 100%;
-    height: 104%;
+    height: 50%;
     width: 100%;
     position: absolute;
-    right: -50%;
-    top: 0;
-    bottom: 0;
+    right: -30%;
+    bottom: -100px;
     display: block;
+    transform: scale(-1, 1);
 }
 .section-info-text {
     padding: 4rem 1rem;
     max-width: 48rem;
+    margin: 0 auto;
+}
+.points-section {
+    width: 90%;
 }
 .points-section .big-header {
     color: #FF5B51;
     text-align: center;
 }
+.points-section .feature-text {
+    width: 80%;
+}
 .points-wrap {
     padding: 4rem 0;
+}
+@media only screen and (max-width: 768px) {
+    .points-wrap {
+        width: 80%;
+        margin: 0 auto;
+    }
 }
 .feature-img {
     width: 72px;
     height: 72px;
+    margin: 2rem 0;
 }
 .feature-img svg {
     fill: #FF5B51;
+    width: 100%;
+    height: 100%;
     /*width: 72px;*/
     /*height: 72px;*/
 
@@ -2630,7 +2666,7 @@ section {
     color: #FF5B51;
     font-family: "oswald-regular";
     font-size: 22px;
-    padding: 2rem 0 2rem 2rem;
+    padding: 2rem 0 2rem 1rem;
 }
 
 .left-part {
@@ -2646,8 +2682,13 @@ section {
     height: 100vh;
     overflow: hidden;
 }
+@media only screen and (max-width: 992px) {
+    .gender-section {
+        height: auto;
+    }
+}
 .gender-section .big-header {
-    padding: 4rem 2rem;
+    padding: 8rem 2rem;
 }
 .left-part {
     background-color: #FFF;
@@ -2812,6 +2853,7 @@ section {
     /*font-size: 22px; }*/
 
 .heart-marker {
+    z-index: 1;
     width: 28px;
     height: 28px; }
 
