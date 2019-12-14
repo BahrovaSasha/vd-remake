@@ -2362,7 +2362,7 @@ main {
 section {
   height: auto;
   min-height: 60rem;
-  padding: 8rem 0 0;
+  /*padding: 8rem 0 0;*/
 }
   @media only screen and (max-width: 576px) {
     section {
@@ -2383,7 +2383,7 @@ section {
     background: linear-gradient(to left, rgba(255, 91, 81, 1), rgba(255, 91, 81, 0), rgba(255, 255, 255, 1)), url('../img/couple2.jpg') no-repeat;
     filter: blur(4px);
     -webkit-filter: blur(4px);
-    background-size: 100% auto;
+    background-size: auto 130%;
     background-position: 30% 20%;
     width: 60%;
     height: inherit;
@@ -2419,7 +2419,19 @@ section {
     bottom: 0;
     display: block;
     background-attachment: local;
-
+}
+@media only screen and (max-width: 576px) {
+    .main-section:before {
+        width: 50%;
+        background: linear-gradient(to left, rgba(255, 91, 81, 1), rgba(255, 91, 81, 0)), url('../img/couple2.jpg') no-repeat;
+    }
+    .main-section-info {
+        width: 96%;
+        margin: 0 auto;
+    }
+    .main-section-info:before {
+        display: none;
+    }
 
 }
   .main-section .logo-wrap,
@@ -2578,7 +2590,7 @@ section {
 }
 
 .section-wrap {
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
   width: 80%;
   margin: 0 auto; }
   @media only screen and (max-width: 992px) {
@@ -2665,6 +2677,7 @@ section {
 }
 .points-section {
     width: 90%;
+    padding: 4rem 0 0;
 }
 .points-section .big-header {
     color: #FF5B51;
