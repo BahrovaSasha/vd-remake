@@ -2391,14 +2391,11 @@ section {
     left: -10%;
     top: 0;
 }
-@media only screen and (max-width: 992px) {
-    .main-section:before {
-        background-size: auto 100%;
-    }
-}
+
   @media only screen and (max-width: 576px) {
     .main-section {
       min-height: 45rem;
+        background-size: auto 100%;
       padding: 0; } }
 .main-section-info,
 .about-section-info {
@@ -2508,6 +2505,42 @@ section {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none; }
+.country-code-wrap {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    max-height: 226px;
+    width: 220px;
+    top: 50px;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .2);
+    overflow-y: scroll;
+}
+.country-code-wrap.active{
+    display: block;
+}
+.code-list {
+    padding: 0;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    border: none;
+}
+.phone-code-btn {
+    width: 100%;
+    color: #959595;
+    font-size: 14px;
+    padding: 0 .6rem;
+    height: 4.4rem;
+    background-color: #fff;
+}
+.country-flag {
+    width: 40px;
+    height: 30px;
+    position: relative;
+    overflow: hidden;
+}
 .phone-field .contact-us-input {
     width: -webkit-calc(100% - 120px);
     width: calc(100% - 120px);
