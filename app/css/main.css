@@ -2383,7 +2383,7 @@ section {
     background: linear-gradient(to left, rgba(255, 91, 81, 1), rgba(255, 91, 81, 0), rgba(255, 255, 255, 1)), url('../img/couple2.jpg') no-repeat;
     filter: blur(4px);
     -webkit-filter: blur(4px);
-    background-size: auto 130%;
+    background-size: 100% auto;
     background-position: 30% 20%;
     width: 60%;
     height: inherit;
@@ -2395,7 +2395,6 @@ section {
   @media only screen and (max-width: 576px) {
     .main-section {
       min-height: 45rem;
-        background-size: auto 100%;
       padding: 0; } }
 .main-section-info,
 .about-section-info {
@@ -2424,6 +2423,7 @@ section {
     .main-section:before {
         width: 50%;
         background: linear-gradient(to left, rgba(255, 91, 81, 1), rgba(255, 91, 81, 0)), url('../img/couple2.jpg') no-repeat;
+        background-size: auto 100%;
     }
     .main-section-info {
         width: 96%;
@@ -2654,10 +2654,12 @@ section {
         background-size: auto 100%;
     }
     }
+
 .about-section-info {
     position: relative;
     padding: 4rem 0;
 }
+
 .about-section-info:before {
     content: '';
     background: url('../img/big-heart-shape.svg') no-repeat;
@@ -2669,6 +2671,20 @@ section {
     bottom: -100px;
     display: block;
     transform: scale(-1, 1);
+}
+@media only screen and (max-width: 576px) {
+    .about-section:before {
+        width: 50%;
+        background: linear-gradient(to right, rgba(255, 91, 81, 1), rgba(255, 91, 81, 0)), url('../img/valentina-photo.jpg') no-repeat;
+        background-size: auto 100%;
+        background-position: 50% 50%;
+    }
+    .about-section-info {
+        width: 100%;
+    }
+    .about-section-info:before {
+        display: none;
+    }
 }
 .section-info-text {
     padding: 4rem 1rem;
@@ -2788,17 +2804,13 @@ section {
 }
 @media only screen and (max-width: 576px) {
     .right-figure {
-        right: 10%;
-    }
-}
-@media only screen and (max-width: 350px) {
-    .right-figure {
         display: none;
     }
     .left-figure {
         display: none;
     }
 }
+
 .right-figure img{
     width: auto;
     height: 100%;
